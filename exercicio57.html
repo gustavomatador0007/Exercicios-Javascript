@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        #Quadrado
+        {
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+    </style>
+    <body>
+
+        <div id="Quadrado"></div>
+
+        <script>
+
+            let px = 0;
+            let py = 0;
+
+            document.addEventListener('keydown', function(evento)
+            {
+                let objeto = document.getElementById("Quadrado");
+                let tecla  = evento.keyCode;
+
+                if(tecla == 37)
+                {
+                    px -= 10;
+                    objeto.style.left=px+'px'
+                } 
+
+                else if(tecla == 38)
+                {
+                    py -= 10;
+                    objeto.style.top=py+'px'
+                } 
+
+                else if(tecla == 39)
+                {
+                    px += 10;
+                    objeto.style.left=px+'px'
+                } 
+
+                else if(tecla == 40)
+                {
+                    py += 10;
+                    objeto.style.top=py+'px'
+                } 
+            });
+        </script>
+    </body>
+</html>

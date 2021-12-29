@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM</title>
+    </head>
+    <style>
+        body {
+            background-image:linear-gradient(to right,rgb(32, 52, 75),rgb(59, 161, 195));
+            color: white;
+        }
+        div#area
+        {
+        background: rgba(27, 192, 156, 0.822);
+        font: normal 13pt Arial;
+        color: rgb(255, 255, 255);
+        width: 100px;
+        height: 40px;
+        line-height: 39px;
+        text-align: center;
+        }
+        
+    </style>
+    <body>
+        <div id="area" onclick="clicar()" onmouseout="sair()" onmouseover="entrar()">Clique aqui!</div>
+        <script>
+            var area=window.document.getElementById("area")
+            var escolohas=["<h4>' Entrou ' = Passar o mouse! <br>" , " ' Saiu :( ' = Sair com o mouse! <br>"," ' Clicou! ' = Clicar com o mouse"]
+            function clicar(){
+                area.innerText="Clicou!"
+            }
+            function sair(){
+                area.innerText="Saiu :("
+            }
+            function entrar(){
+                area.innerText="Entrou!"
+            }       
+                                        document.write("<br>")
+            var primeiro=document.write("<h3>Este foi nosso <strong>primero evento</strong> em 'JS'</h3>")
+            document.write(escolohas[0])
+            document.write(escolohas[1])
+            document.write(escolohas[2])
+        </script>
+    </body>
+</html>

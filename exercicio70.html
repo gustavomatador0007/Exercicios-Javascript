@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        #pegandoPeloId{
+            padding-bottom: 1rem;
+            background-color: rgb(175, 170, 170);
+            width: 100px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #click{
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+
+    </style>
+
+<body>
+
+    <div id="pegandoPeloId">
+        pegando por Id
+    </div>
+    <input type="button" onclick="clicar()" value="porClick" id="click">
+    <script>
+        let recebeId = document.getElementById('pegandoPeloId');
+
+        function clicar(){
+            console.log('clicou');
+            return
+        }
+
+        recebeId.addEventListener('click' , () =>{
+            console.log('clicou pelo Id');
+        });
+
+    </script>
+</body>
+</html>

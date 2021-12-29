@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #bloco
+    {
+       width: 100px;
+       height: 100px;
+       background-color: rgb(75, 75, 201); 
+    }
+</style>
+<body>
+    <div id="bloco"></div>
+    <script>
+
+         /*
+        const algumaCoisa = document.querySelector('#bloco')
+
+        algumaCoisa.addEventListener('click',()=>{
+        alert('**Ola AddEventListener!!!**');
+        })
+        */
+
+        function algo()
+        {
+            alert('**Ola AddEventListener!!!**')
+        }
+        
+        function recebe()
+        {
+            document.getElementById("bloco").addEventListener("click",algo)
+        }
+        recebe()
+
+    </script>
+</body>
+</html>

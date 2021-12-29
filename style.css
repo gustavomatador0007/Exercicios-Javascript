@@ -1,0 +1,27 @@
+body{
+    background-image:linear-gradient(to right,rgb(87, 20, 20),rgb(212, 148, 51));
+}
+header{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.699);
+    height: 40px;
+    width: 370px;
+    text-align: center;
+    line-height: 14x;
+    margin: auto;
+    text-shadow: 0,1px 0,1px 0,1px black;
+}
+h3{
+    color: white;
+    margin: 20px;
+}
+#nome{
+    color: white;
+    margin: 20px;
+    font: normal 17px arial;
+
+}
+
+

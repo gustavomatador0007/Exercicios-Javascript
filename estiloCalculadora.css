@@ -1,0 +1,68 @@
+body
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        background: rgb(184, 111, 1);
+    }
+
+#contador
+    {
+        text-align: center;
+        padding-top: 40px;
+    }
+
+.titulo
+    {
+        text-align: center;
+        color: white;
+    }
+
+#caixas
+    {
+        padding-top: 80px;
+        text-align: center;
+    }
+
+#caixa1
+    {
+        padding: 15px 25px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        margin-right: 20px;
+        font-size: 17px;
+    }
+
+#caixa2
+    {
+        padding: 15px 25px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        margin-right: 20px;
+        font-size: 17px;
+    }
+
+#caixa3
+    {
+        padding: 15px 25px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        margin-right: 20px;
+        font-size: 17px;
+    }
+
+.corDeFundo
+    {
+        background: rgb(255, 255, 255);
+    }
+
+.corDeFundo:hover
+    {
+        background: rgb(216, 213, 213);
+    }
+
+.corDeFundo
+    {
+        border-radius: 6px;
+    }

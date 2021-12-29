@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image:linear-gradient(to right,rgb(122, 48, 13),rgb(145, 105, 18));
+       color: white;
+        }
+
+    </style>
+    <input type="number" name="numero" id="numero">
+    <input type="button" value="verificar"  id="verificar" onclick="clique ()">
+    <div id="resultado"><h3>O valor digitado é de:</h3></div>
+    <script>
+        function clique(){
+            var numero=window.document.querySelector("input#numero")
+            var resultado=window.document.querySelector("div#resultado")
+            var n1= Number(numero.value)
+            var n2= n1
+            resultado.innerHTML = (n2)
+        }
+    </script>
+</body>
+</html>

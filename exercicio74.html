@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .tudo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20%;
+        }
+
+        .all{
+            margin-right: 1rem;
+            margin-left: 1rem;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid black;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .all:hover{
+            background-color: rgb(61, 57, 57);
+            color: white;
+        }
+    </style>
+<body>
+    <section class="tudo">
+        <input type="button" value="azul" id="azul" class="all">
+        <input type="button" value="laranja" id="laranja" class="all">
+        <input type="button" value="Verde Claro" id="verde" class="all">
+    </section>
+
+    <script>
+        let botao1 = document.getElementById('azul');
+        let botao2 = document.getElementById('laranja')
+        let botao3 = document.getElementById('verde')
+
+        botao1.addEventListener('click', ()=>{
+            document.body.style.backgroundColor = 'rgb(64, 92, 187)'
+        })
+
+        botao2.addEventListener('click', ()=>{
+            document.body.style.backgroundColor = 'rgb(204, 125, 72)'
+        })
+
+        botao3.addEventListener('click',()=>{
+            document.body.style.backgroundColor = 'rgb(46, 204, 144)'
+        })
+    </script>
+</body>
+</html>

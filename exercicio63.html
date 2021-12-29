@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="nada"></div>
+
+    <div class="bolinha">oi</div>
+    <div class="bolinha">oi</div>
+    <div class="bolinha">oi</div>
+    
+    <script>
+
+        let recebendo = document.getElementById('nada')
+        let nome = ['gustavo','ana','maria']
+        let recebeNome = nome.join('-')
+        recebendo.innerHTML = recebeNome
+
+        /*****************************/
+
+        let nome1 = ['GU','ANA' ,'ad']
+        nome1.push('ola')
+        console.log(nome1)
+
+        let recebedor = document.querySelectorAll(".bolinha")
+        console.log(recebedor)
+        recebedor.forEach(circle => circle.style.color= 'red')
+
+    </script>
+</body>
+</html>

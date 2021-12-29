@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var valor
+        valor=4
+        var mensagem
+        switch(valor){
+            case 1:
+                mensagem="Você está em primeiro!<br>";
+                break;
+            case 2:
+                mensagem="Você está em segundo!<br>";
+                break;
+            case 3:
+                mensagem="Você está em terceiro lugar!<br>";
+                break;
+            default:
+                mensagem="Você não foi classificado!<br>";
+                
+        }
+        document.write(mensagem)
+
+        switch(valor){
+            case 1:
+                mensagem="Medalha de ouro!";
+                break;
+            case 2:
+                mensagem="Medalha de prata!";
+                break;
+            case 3:
+                mensagem="Medalha de bronze!";
+                break;
+            default:
+                mensagem="Não recebeu medalha!";         
+        }
+        document.write(mensagem)
+    </script>
+</body>
+</html>

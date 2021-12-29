@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        height: 100%;
+    }
+    body{
+
+       background-image:linear-gradient(to left,rgb(7, 32, 78),rgb(55, 120, 180));
+       color: white;      
+    }
+</style>
+<body>
+    <script>
+        var nome=window.prompt("Digite seu nome","Digite aqui")
+        var numero1=window.prompt("Digite um numero "+ nome+ " !")
+        var numero=window.prompt("Digite outro número!")
+        var soma=parseFloat(numero1 * numero)
+        document.write("<h4>Obrigado por entrar "+nome + " , esse é um programa bem básico, mas o que você achou?<br><br>Espero que tenha gostado:)</h4>")
+        window.alert(numero1 + " vezes " + numero  + " é igual a : " + soma)
+    </script>
+</body>
+</html>

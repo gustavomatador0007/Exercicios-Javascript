@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nome">
+    <input type="button" value="Clique Aqui" id="botao">
+    <div id="texto"></div>
+    <script>
+        
+        let recebe_botao = document.getElementById('botao')
+        recebe_botao.addEventListener('click',()=>{
+            let recebe_nome  = document.getElementById('nome').value
+            let recebe_caixa = document.getElementById('texto')
+            recebe_caixa.innerHTML=`Prazem em te conhecer ${recebe_nome}`
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+                    <style>
+                body{
+                    background: rgb(50, 50, 141);
+                    color: white;
+                }
+                    </style>
+        <script>
+            var digite=parseInt (window.prompt("Digite um número","Digite aqui"))
+            var posição=(digite)
+            var medalha=(digite)
+            
+            switch(posição)
+            {
+                case 1:{
+                    document.write("<h3>Você é o primeiro colocado!</h3>")
+                    break
+                }
+                        case 2:{
+                            document.write("<h3>Você é  segundo colocado!</h3>")
+                            break
+                        }
+                                case 3:{
+                                    document.write("<h3>Você é o terceiro colocado!</h3>")
+                                    break
+                                }
+                                        default:{
+                                            document.write("<h3>Você não foi classificado !</h3>")
+                                            break
+                                        }
+            }
+            switch(medalha){
+                case 1:{
+                    document.write("<h3>Você recebeu: Medalha de ouro!</h3>")
+                    break
+                }
+                        case 2:{
+                            document.write("<h3>Você recebeu: Medalha de prata!</h3>")
+                            break
+                }
+                                case 3:{
+                                    document.write("<h3>Você recebeu: Medalha de bronze!</h3>")
+                                    break
+                                }
+                                        default:{
+                                            document.write("Você não recebeu medalha :(")
+                                        }
+            }
+        </script>
+    </body>
+</html>

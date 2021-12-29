@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #Quadradin
+    {   
+        width: 100px;
+        height: 100px;
+        border: 1px solid rgb(175, 135, 135);
+        background-color:#fff ;
+    }
+</style>
+<body>
+
+    <div id="Quadradin"></div>
+
+    <br> 
+
+    <input type="button" value="Iniciar" onclick="Iniciar()">
+    <input type="button" value="Parar" onclick="Parar()">
+
+    <script>
+        
+        function mudarCor()
+        {
+            let objeto = document.getElementById("Quadradin")
+            let r = Math.floor(Math.random()*255);
+            let g = Math.floor(Math.random()*255);
+            let b = Math.floor(Math.random()*255);
+           objeto.style.backgroundColor="rgb("+r+","+g+","+b+")";
+        }
+
+            function Iniciar(){
+                mudarCor()
+                let tempo = setInterval(mudarCor,1000)
+
+            }
+
+            function Parar(){
+                clearInterval(tempo)
+            }
+
+        //window.addEventListener("load",mudarCor)
+    </script>
+</body>
+</html>

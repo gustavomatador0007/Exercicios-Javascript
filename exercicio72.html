@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="button" value="clicar" onclick="botao()">
+        <input type="button" value="clicar" id="recebe-botao">
+        <script>
+            function botao(){
+                alert('clicou!')
+            }
+            let recebe_botao = document.getElementById('recebe-botao')
+            recebe_botao.addEventListener('click',()=>{
+                alert('clicou no botao do addEventListener')
+            })
+        </script>
+    </body>
+</html>

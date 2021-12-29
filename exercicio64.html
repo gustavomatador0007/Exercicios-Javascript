@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 19px;
+            color: black;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        #quadrado{
+            background-color: rgb(185, 81, 20);
+            display: flex;
+            color: white;
+            width: 50%;
+            height: 250px;
+            padding-left: 10px;
+            padding-right: 10px;
+            display: none;
+        }
+
+        .botão{
+            padding: 30px;
+            cursor: pointer;
+            background-color: rgb(185, 81, 20);
+            border-style: none;
+            color: white;
+        }
+        
+        .botão:hover{
+            padding: 34px;
+            background-color: rgb(172, 72, 14);  
+        }
+
+        nav{
+            justify-content: center;
+            display: flex;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="quadrado">Salve Salve Familia...</div>
+    </header>
+    
+    <nav>
+        <input type="button" value="aparecer/sumir" onclick="clicar()" class="botão">
+    </nav>
+    
+    <script>
+         
+        function clicar(){
+            let recebe = document.getElementById('quadrado')
+           console.log(recebe)
+            if (recebe.style.display === 'block'){
+                recebe.style.display = 'none'
+            } else{
+                recebe.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
